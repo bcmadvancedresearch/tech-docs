@@ -1,5 +1,8 @@
 Buld AR8MXMQ U-boot
 ===
+
+
+[![hackmd-github-sync-badge](https://hackmd.io/d1Cwode-TrK4s3bsN81vWA/badge)](https://hackmd.io/d1Cwode-TrK4s3bsN81vWA)
 1. Download and install Yocto SDK
     * [Yocto 4.14.98](https://engineering.bcmcom.com/CustomerDL/AR8MXMQ/fsl-imx-xwayland-glibc-x86_64-core-image-minimal-aarch64-toolchain-4.14-sumo.sh)
     * [Yocto 5.4.47](https://engineering.bcmcom.com/CustomerDL/AR8MXMQ/fsl-imx-xwayland-glibc-x86_64-core-image-minimal-aarch64-imx8mnevk-toolchain-5.4-zeus.sh)
@@ -48,7 +51,7 @@ Buld AR8MXMQ U-boot
     $ cp spl/u-boot-spl.bin $(imx-mkimage-dir)/iMX8M/
     
     $ cd $(imx-mkimage-dir)
-    $ make flash_hdmi_spl_uboot_ar8mxm
+    $ make make SOC=iMX8M flash_hdmi_spl_uboot_ar8mxq
     ```
     get `flash.bin` in `$(imx-mkimage-dir)/iMX8M/`
 4. Burn the flash.bin to MicroSD card offset 33KB
