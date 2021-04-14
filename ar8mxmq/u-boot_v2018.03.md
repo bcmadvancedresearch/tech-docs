@@ -16,6 +16,15 @@ Buld AR8MXMQ U-boot imx_v2018.03_4.14.98_2.2.0-bcm
     $ sh fsl-imx-xwayland-glibc-x86_64-core-image-minimal-aarch64-imx8mnevk-toolchain-5.4-zeus.sh
     ```
     
+    1.1.1 Remove `-wl` in LDFLAGS
+    
+    `sudo sed -i 's/-Wl,//g' /opt/fsl-imx-xwayland/4.14-sumo/environment-setup-aarch64-poky-linux`
+    
+    or
+    
+    `sudo sed -i 's/-Wl,//g' /opt/fsl-imx-xwayland/5.4-zeus/environment-setup-aarch64-poky-linux`
+    
+    
     1.2 Prepare build environment
     
     ` . /opt/fsl-imx-xwayland/4.14-sumo/environment-setup-aarch64-poky-linux`
